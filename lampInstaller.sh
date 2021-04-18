@@ -10,7 +10,7 @@ wget https://packages.sury.org/php/apt.gpg
 apt-key add apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php8.list
 apt update
-apt install -y php8.0 php8.0-cli php8.0-common
+apt install -y php8.0 php8.0-cli php8.0-common php8.0-mysql
 update-alternatives --set php /usr/bin/php8.0
 php -v
 #mariadb
